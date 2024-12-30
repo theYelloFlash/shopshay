@@ -1,0 +1,72 @@
+<div class="offer-tag d-flex justify-content-center align-items-center text-white">
+    <p class="m-0 text-discount text-center">Summer Sale For All Swim Suits And Frees Delivery - OFF 50%!<a href=""
+            class="text-white text-discount ms-2 fw-semibold">Shop Now</a></p>
+</div>
+<div class="sticky-navbar">
+    <nav class="navbar">
+        <div class="container navbar-container" [class.navbar-onScroll]="isScrolled">
+            <div class="w-100 d-flex justify-content-between align-items-center">
+                <div class="heading-name">
+                    <p class="m-0 heading-logo" routerLink="/home">ShopShay</p>
+                </div>
+
+                <div class="menu-options d-none d-lg-block">
+                    <span class="menu d-flex">
+                        <a class="menuItem" mat-button routerLinkActive="active" routerLink="/home">Home</a>
+                        <a class="menuItem" mat-button routerLinkActive="active" routerLink="/contact">Contact</a>
+                        <a class="menuItem" mat-button routerLinkActive="active" routerLink="/about">About</a>
+                        <a *ngIf="(!isLoggedIn && !(isLoggedIn$ | async))" class="menuItem" mat-button
+                            routerLinkActive="active" routerLink="/login">Login</a>
+                    </span>
+                </div>
+                <div class="search-container d-flex gap-4 align-items-center">
+                    <div class="search-bar gap-3 p-1 px-3 d-none d-md-flex">
+                        <input type="text" class="border-0 bg-transparent" placeholder="What are you looking for?">
+                        <i class="bi bi-search search-icon"></i>
+                    </div>
+                    <i class="bi bi-search search-icon d-md-none fs-5"></i>
+                    <div class="other-options d-flex justify-content-center align-items-center gap-4">
+                        <div class="position-relative cursor" routerLink="/favorites">
+                            <i class="bi bi-heart fs-5"></i>
+                            <div *ngIf="itemsLiked > 0"
+                                class="bg-o-primary notification text-white d-flex justify-content-center align-items-center">
+                                <small class="fw-semibold"> {{itemsLiked}} </small>
+                            </div>
+                        </div>
+                        <div class="position-relative cursor" routerLink="/cart">
+                            <i class="bi bi-cart3 fs-5"></i>
+                            <div *ngIf="itemsIncart > 0"
+                                class="bg-o-primary notification text-white d-flex justify-content-center align-items-center">
+                                <small class="fw-semibold"> {{itemsIncart}} </small>
+                            </div>
+                        </div>
+                        <div class="dropdown d-lg-none">
+                            <button class="dropdown-toggle bg-transparent border-0 p-0" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list fs-5"></i></button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <a class="dropdown-item py-2" href="#"><i class="bi bi-house me-3"></i>Home</a>
+                                <a class="dropdown-item py-2" href="#"><i
+                                        class="bi bi-person-lines-fill me-3"></i>Contact</a>
+                                <a class="dropdown-item py-2" href="#"><i
+                                        class="bi bi-file-earmark-bar-graph me-3"></i>About</a>
+                                <a class="dropdown-item py-2" href="#"><i class="bi bi-box-arrow-left me-3"></i>Log
+                                    Out</a>
+                            </div>
+                        </div>
+                        <div *ngIf="(isLoggedIn ||(isLoggedIn$ | async))" class="dropdown d-none d-lg-block">
+                            <button class="dropdown-toggle bg-transparent border-0 p-0" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person fs-4"></i>
+                            </button>
+                            <ul class="dropdown-menu p-2 px-3" aria-labelledby="dropdownMenuButton1">
+                                <button class="bg-o-primary border-0 rounded-5 text-white p-2 px-3 fw-semibold w-100"
+                                    (click)="logOut()">Sign-Out</button>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

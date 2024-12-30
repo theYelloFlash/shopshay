@@ -1,0 +1,32 @@
+.login-input {
+    border: none;
+    border-bottom: 2px solid rgb(191, 191, 191);
+}
+
+.login-input input {
+    outline: none;
+}
+
+.login-input button {
+    color: rgb(109, 109, 109);
+}
+
+.sign-in-button {
+    transition: all .3s ease;
+}
+
+.sign-in-button:active {
+    background-color: #e35656;
+    transform: scale(1.02);
+}
+
+.validation-error {
+    position: absolute;
+    bottom: -21px;
+    left: 11px;
+    font-size: 14px;
+}
+
+.gap-20 {
+    height: 35px;
+}

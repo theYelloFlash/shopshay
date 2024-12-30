@@ -1,0 +1,22 @@
+.quantity {
+    border: none;
+    border: 1px solid grey;
+}
+
+.delete-icon {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(253, 232, 232);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.delete-icon i {
+    color: rgb(255, 42, 77);
+}
+
+.cart-image {
+    width: 60px;
+    height: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,13 @@
+<div class="gap-40"></div>
+<div class="container">
+    <div class="heading">
+        <p class="fs-4 fw-semibold px-2">WishList ({{favoriteProducts.length}})</p>
+    </div>
+    <div #cardContainer class="d-flex flex-wrap gap-3 card-container mt-4 p-2 justify-content-between">
+        @for (item of favoriteProducts; track $index) {
+        <app-card [cardData]="item"></app-card>
+        }
+    </div>
+    <div class="gap-40"></div>
+</div>
+<div class="gap-40"></div>

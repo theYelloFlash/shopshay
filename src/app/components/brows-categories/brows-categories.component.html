@@ -1,0 +1,9 @@
+<app-heading-component [headingData]="headiingDataForCategories"></app-heading-component>
+<div class="mt-4 py-3 d-flex gap-3 category-container">
+    @for (i of icons; track $index) {
+    <div class="box d-flex flex-column justify-content-center align-items-center">
+        <i class="{{i.class}} fs-1"></i>
+        <p class="m-0">{{i.iconName}} </p>
+    </div>
+    }
+</div>

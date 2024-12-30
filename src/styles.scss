@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #DB4444;
+    --secondary-color: #F5F5F5
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.bg-o-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-o-secondary {
+    background-color: var(--secondary-color);
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+}
+
+.gap-40 {
+    height: 5rem;
+}
+
+.gap-80 {
+    width: 100px;
+}
+
+.width-60 {
+    width: 60%;
+}
+
+.gap-30 {
+    height: 2.5rem;
+}

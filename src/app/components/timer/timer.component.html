@@ -1,0 +1,21 @@
+<div *ngIf="days > 0 ||  hours > 0 ||  minutes > 0 ||  seconds > 0" class="d-flex gap-2 align-items-center">
+    <div class="d-flex align-items-start flex-column ">
+        <p class="m-0 text">Days</p>
+        <p class="m-0 timer-number">{{days < 10 ? "0" + days : days> 0 ? days : 0 }} </p>
+    </div>
+    <p class="m-0 colon pb-2">:</p>
+    <div class="d-flex align-items-start flex-column ">
+        <p class="m-0 text">Hours</p>
+        <p class="m-0 timer-number"> {{hours < 10 ? '0' +hours : hours> 0 ? hours : 0}} </p>
+    </div>
+    <p class="m-0 colon pb-2">:</p>
+    <div class="d-flex align-items-start flex-column ">
+        <p class="m-0 text">Min</p>
+        <p class="m-0 timer-number"> {{minutes < 10 ? '0' +minutes : minutes> 0 ? minutes : 0}} </p>
+    </div>
+    <p class="m-0 colon pb-2">:</p>
+    <div class="d-flex align-items-start flex-column ">
+        <p class="m-0 text">Seconds</p>
+        <p class="m-0 timer-number"> {{seconds < 10 ? '0' +seconds : seconds> 0 ? seconds : 0}} </p>
+    </div>
+</div>

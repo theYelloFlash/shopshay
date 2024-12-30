@@ -1,0 +1,6 @@
+<app-heading-component [headingData]="headingDataForBestSellng"></app-heading-component>
+<div #cardContainer class="d-flex gap-3 card-container mt-4 p-2">
+    @for (item of cardDataForBestSellingProducts; track $index) {
+    <app-card [cardData]="item"></app-card>
+    }
+</div>

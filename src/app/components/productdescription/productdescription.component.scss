@@ -1,0 +1,90 @@
+.side-item div {
+    background-color: var(--secondary-color);
+}
+
+.break-line {
+    border: 1px solid rgba(235, 235, 235, 0.81);
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+}
+
+.form-check-input:checked {
+    border: 3px solid rgba(148, 148, 148, 0.707);
+    padding: 5px;
+}
+
+.orange {
+    background-color: rgb(255, 124, 37);
+}
+
+.blue {
+    background-color: rgb(0, 145, 255);
+}
+
+.size-box {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    background-color: transparent;
+    border: 1px solid rgba(74, 74, 74, 0.821);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.size-radio {
+    display: none;
+}
+
+.heart {
+    width: 50px;
+}
+
+.buynow {
+    height: 41px;
+    width: 50%;
+}
+
+.size-radio:checked+.size-box {
+    background-color: var(--primary-color);
+    font-weight: bold;
+    border: none;
+    color: white;
+}
+
+.quntity-container {
+    border: 1px solid rgba(74, 74, 74, 0.821);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.quntity-container button:first-child {
+    border: none;
+    border-right: 1px solid rgba(74, 74, 74, 0.821);
+}
+
+.quntity-container button:nth-of-type(2) {
+    border: none;
+    border-left: 1px solid rgba(74, 74, 74, 0.821);
+}
+
+.quntity-container button:active {
+    background-color: var(--primary-color);
+    display: flex;
+
+}
+
+.delivery-return {
+    border: 1px solid rgba(74, 74, 74, 0.821);
+    border-radius: 4px;
+}
+
+
+.delivery-return div:first-child {
+    border-bottom: 1px solid rgba(74, 74, 74, 0.821);
+}

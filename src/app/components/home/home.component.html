@@ -1,0 +1,68 @@
+<div>
+    <div class="container">
+        <mat-sidenav-container class="sidenav-container" [hasBackdrop]="false">
+            <!-- Side navigation -->
+            <mat-sidenav #sidenav mode="side" opened class="mt-4 d-none d-lg-block">
+                <mat-nav-list class="item-list">
+                    <p class="p-0 py-2"><i class="me-2 fa-solid fa-venus"></i>Women's
+                        Fashion</p>
+                    <p class="p-0 py-2"><i class="me-2 fa-solid fa-mars"></i>Men's Fashion</p>
+                    <p class="p-0 py-2"><i class="me-2 fa-solid fa-laptop"></i>Electronics</p>
+                    <p class="p-0 py-2"><i class="me-2 fa-solid fa-couch"></i>Home &
+                        Lifestyle</p>
+                    <p class="p-0 py-2"><i class="me-2 bi bi-capsule"></i>Medicine</p>
+                    <p class="p-0 py-2"><i class="me-2 fa-solid fa-basketball"></i>Sports &
+                        Outdoor</p>
+                    <p class="p-0 py-2"><i class="me-2 fa-solid fa-baby"></i>Baby's & Toys</p>
+                    <p class="p-0 py-2"><i class="me-2 fa-solid fa-basket-shopping"></i>Groceries &
+                        Pets</p>
+                    <p class="p-0 py-2"><i class="me-2 fa-solid fa-heart-pulse"></i>Health &
+                        Beauty</p>
+                </mat-nav-list>
+            </mat-sidenav>
+
+            <!-- Main content -->
+            <div class="main-content pt-3">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/slidingImages/1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/slidingImages/2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/slidingImages/3.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- assets/slidingImages/3.png -->
+        </mat-sidenav-container>
+    </div>
+</div>
+<div class="gap-component"></div>
+<div class="container">
+    <app-flashsales></app-flashsales>
+    <div class="gap-component"></div>
+    <app-brows-categories></app-brows-categories>
+    <div class="gap-component"></div>
+    <app-bestsellingproducts></app-bestsellingproducts>
+    <div class="gap-component"></div>
+    <img class="w-100 py-2" src="assets/banners/image.png" alt="">
+    <div class="gap-component"></div>
+    <app-explore-products></app-explore-products>
+    <div class="gap-component"></div>
+    <app-new-arrival></app-new-arrival>
+    <div class="gap-component"></div>
+    <app-extra-services></app-extra-services>
+    <div class="gap-component"></div>
+</div>

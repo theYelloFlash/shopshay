@@ -1,0 +1,16 @@
+.colon {
+    color: var(--primary-color);
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 600;
+}
+
+.text {
+    font-size: .7rem;
+    font-weight: 600;
+    line-height: 1px;
+}
+
+.timer-number {
+    font-size: clamp(1.5rem, 2vw, 3.5rem);
+    font-weight: 700;
+}

@@ -1,0 +1,11 @@
+<app-heading-component [headingData]="headingDataForFlashSale"></app-heading-component>
+<div #cardContainer class="d-flex gap-3 card-container mt-4 p-2">
+    <ng-container *ngFor="let item of cardDataForFlashSales; let i = index">
+        <app-card [cardData]="item"></app-card>
+    </ng-container>
+</div>
+<div class="gap-40"></div>
+<div class="w-100 d-flex justify-content-center">
+    <button class="bg-o-primary p-3 px-5 border-0 text-white fs-6 show-all rounded-3"
+        aria-label="View All Products">View All Products</button>
+</div>

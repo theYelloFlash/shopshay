@@ -1,0 +1,106 @@
+<div class="gap-40"></div>
+<div class="container">
+    <div class="d-flex flex-column flex-lg-row gap-4">
+        <div class="d-flex gap-4 col-12 col-lg-7 justify-content-between justify-content-lg-start">
+            <div class="d-flex gap-2 side-item  flex-column col-3">
+                <div class="h-25 py-3 d-flex align-items-center justify-content-center rounded-1"><img
+                        class="width-60  img-fluid" src="assets/products/ps5controller2.png" alt=""></div>
+                <div class="h-25 py-3 d-flex align-items-center justify-content-center rounded-1"><img
+                        class="width-60  img-fluid" src="assets/products/ps5controller3.png" alt=""></div>
+                <div class="h-25 py-3 d-flex align-items-center justify-content-center rounded-1"><img
+                        class="width-60  img-fluid" src="assets/products/ps5controller4.png" alt=""></div>
+                <div class="h-25 py-3 d-flex align-items-center justify-content-center rounded-1"><img
+                        class="width-60  img-fluid" src="assets/products/ps5controller1.png" alt=""></div>
+            </div>
+            <div class="col-8 d-flex justify-content-center align-items-center px-3 bg-o-secondary">
+                <div><img class="w-100 img-fluid" src="assets/products/ps5controller5.png" alt=""></div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-5 px-3 overflow-hidden">
+            <p class="fw-semibold fs-3">Havic HV G-92 Gamepad</p>
+            <div class="d-flex gap-2 just">
+                <div>
+                    @for (item of [1,2,3,4,5]; track $index) {
+                    <i class="bi bi-star-fill text-warning pe-1"></i>
+                    }
+                </div>
+                <p class="text-secondary m-0">(150 reviews) | <span class="text-success">In stock</span></p>
+            </div>
+            <p class="fs-4 fw-bold mt-2 primary-color">$192.00</p>
+            <p class="col-lg-8 col-12 fw-semibold">
+                PlayStation 5 Controller Skin High quality vinyl with air channel adhesive for easy bubble free install
+                & mess free removal Pressure sensitive.
+            </p>
+            <div class="p3 mb-2 break-line"></div>
+            <div class="d-flex gap-4">
+                <p class="m-0 fw-semibold">Colours :</p>
+                <div class="d-flex gap-2">
+                    <div class="form-check">
+                        <input class="form-check-input blue" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault1">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input orange" type="radio" name="flexRadioDefault"
+                            id="flexRadioDefault2" checked>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex gap-3 mt-3 align-items-center">
+                <p class="fw-semibold m-0">Size :</p>
+                <div class="size-selector d-flex gap-2">
+                    <input type="radio" id="sizexs" name="size" class="size-radio">
+                    <label for="sizexs" class="size-box">XS</label>
+
+                    <input type="radio" id="sizes" name="size" class="size-radio">
+                    <label for="sizes" class="size-box">S</label>
+
+                    <input type="radio" id="sizem" name="size" class="size-radio">
+                    <label for="sizem" class="size-box">M</label>
+
+                    <input type="radio" id="sizeLarge" name="size" class="size-radio">
+                    <label for="sizeLarge" class="size-box">L</label>
+
+                    <input type="radio" id="sizeXLarge" name="size" class="size-radio">
+                    <label for="sizeXLarge" class="size-box">Xl</label>
+                </div>
+            </div>
+            <div class="d-flex mt-3 gap-2 align-items-center col-12 col-lg-10 justify-content-between">
+                <div class="d-flex align-items-center gap-3 quntity-container">
+                    <button class="fs-4 px-2 pb-1" (click)="quntityChange('decrease')"
+                        [disabled]="productQuantity<= 1"><span>-</span>
+                    </button>
+                    <div class="productquntity"> {{productQuantity}} </div>
+                    <button class="fs-4 px-2 pb-1" (click)="quntityChange('increase')"><span> +
+                        </span></button>
+                </div>
+
+                <button class=" bg-o-primary border-0 buynow rounded-2 text-white">Buy Now</button>
+                <button class="p-2 border-secondary bg-transparent rounded-2 h-100 size-box heart"><i
+                        class="bi bi-heart"></i></button>
+
+            </div>
+
+            <div>
+                <div class="delivery-return mt-3 col-12 col-lg-10">
+                    <div class="d-flex p-3 align-items-center gap-3">
+                        <i class="bi bi-truck fs-3"></i>
+                        <div>
+                            <p class="m-0">Free Delivery</p>
+                            <p class="m-0"><small class="fw-semibold">Enter your postal code for Delivery
+                                    Availability</small></p>
+                        </div>
+                    </div>
+                    <div class="d-flex p-3 align-items-center gap-3">
+                        <i class="bi bi-recycle fs-3"></i>
+                        <div>
+                            <p class="m-0">Return Delivery</p>
+                            <p class="m-0"><small class="fw-semibold">Free 30 Days Delivery Returns. Details</small></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gap-40"></div>

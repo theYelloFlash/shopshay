@@ -1,0 +1,76 @@
+.card {
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    overflow: hidden;
+}
+
+.image-container {
+    max-height: 240px;
+    height: 240px;
+    position: relative;
+    width: 100%;
+    background-color: var(--secondary-color);
+}
+
+.add-to-cart {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(10px);
+    color: white;
+    bottom: -20%;
+    transition: .3s all ease-in-out;
+}
+
+.image-container:hover .add-to-cart {
+    bottom: 0;
+}
+
+.image-container img {
+    width: 80%;
+    transform: translate(-2%, 3%);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: .9rem;
+}
+
+.bi-star-fill {
+    color: #FFAD33;
+}
+
+.card-action {
+    right: 15px;
+    top: 15px;
+    gap: 16px;
+    // font-size: 20px;
+    // font-weight: 500;
+}
+
+.card-action i {
+    font-size: 20px;
+    transition: .2s all ease-in-out;
+    color: rgb(59, 59, 59);
+}
+
+.card-action i:hover {
+    transform: scale(1.2);
+}
+
+.discount {
+    width: 45px;
+    height: 28px;
+    border-radius: 6px;
+    color: white;
+    font-size: small;
+    background-color: var(--primary-color);
+    top: 15px;
+    left: 15px;
+}
+
+.discount p {
+    line-height: 3px;
+}

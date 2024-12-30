@@ -1,0 +1,20 @@
+.card-container {
+    overflow-y: scroll;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.show-all {
+    transition: all .3s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.show-all:hover {
+    background-color: #fa4141;
+}
+
+.show-all:active {
+    transform: scale(1.04);
+}

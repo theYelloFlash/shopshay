@@ -1,0 +1,43 @@
+<!-- <div class="gap-40"></div> -->
+<ngx-ui-loader></ngx-ui-loader>
+<!-- <div class="gap-40"></div> -->
+<div class="container d-flex justify-content-center">
+    <div class="d-none d-md-flex width-60">
+        <img class="w-100" src="assets/banners/login.png" alt="">
+    </div>
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+        <form class="d-flex flex-column justify-content-start width-60">
+            <p class="fs-2 mb-4 py-3 fw-bold">Login</p>
+            <div class="position-relative">
+                <div class="login-input p-2">
+                    <input [formControl]="emailCtrl" type="email" class=" border-0 bg-transparent" placeholder="Email"
+                        maxlength="30">
+                </div>
+                @if (emailCtrl.hasError('email')) {
+                <p class="text-danger validation-error m-0"><small>Email is not valid</small></p>
+                }
+                @if (emailCtrl.touched && emailCtrl.hasError('required')) {
+                <p class="text-danger validation-error m-0"><small>Email is required</small></p>
+                }
+            </div>
+            <div class="gap-20"></div>
+            <div class="position-relative">
+                <div class="login-input p-2 d-flex justify-content-between">
+                    <input [formControl]="passwordCtrl" [type]="isPasswordHidden ? 'password' : 'text'"
+                        class="border-0 bg-transparent" placeholder="Password" maxlength="20">
+                    <button class="bg-transparent border-0" (click)="isPasswordHidden = !isPasswordHidden"><i
+                            [class.bi-eye]="!isPasswordHidden" [class.bi-eye-slash]="isPasswordHidden"
+                            class="bi"></i></button>
+                </div>
+                @if (passwordCtrl.touched && passwordCtrl.hasError('required')) {
+                <p class="text-danger validation-error m-0"><small>Password is required</small></p>
+                }
+            </div>
+            <div class="mt-4 py-4">
+                <button type="submit" class="w-100 rounded-1 bg-o-primary border-0 text-white p-2 sign-in-button"
+                    [disabled]="emailCtrl.invalid || passwordCtrl.invalid" (click)="submitLoginForm()">Sign IN</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="gap-40"></div>

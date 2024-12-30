@@ -1,0 +1,31 @@
+.pointer {
+    height: 40px;
+    width: 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.subheading {
+    font-size: clamp(.9rem, 1.2vw, 1.2rem);
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.gap-between {
+    height: .6rem;
+}
+
+.main-heading {
+    font-weight: 600;
+    letter-spacing: .1rem;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: clamp(1.5rem, 2.7vw, 2.7rem);
+}
+
+.bg-o-secondary {
+    width: 50px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+}

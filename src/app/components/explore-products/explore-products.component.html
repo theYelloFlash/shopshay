@@ -1,0 +1,10 @@
+<app-heading-component [headingData]="headingForExplore"></app-heading-component>
+<div #cardContainer class="d-flex flex-wrap gap-3 card-container mt-4 p-2 justify-content-between">
+    @for (item of cardDataForExploreProducts; track $index) {
+    <app-card [cardData]="item"></app-card>
+    }
+</div>
+<div class="gap-40"></div>
+<div class="w-100 d-flex justify-content-center">
+    <button class="bg-o-primary p-3 px-5 border-0 text-white fs-6 show-all rounded-3">View All Products</button>
+</div>

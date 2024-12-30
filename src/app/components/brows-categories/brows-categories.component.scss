@@ -1,0 +1,21 @@
+.box {
+    min-width: 180px;
+    height: 155px;
+    border: 1px solid rgba(139, 139, 139, 0.66);
+    border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+
+.box:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.category-container {
+    overflow: scroll;
+    cursor: pointer;
+}
+
+.category-container::-webkit-scrollbar {
+    display: none;
+}
