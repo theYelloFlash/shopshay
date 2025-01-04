@@ -8,15 +8,17 @@ import { ContactComponentComponent } from './components/contact-component/contac
 import { AuthGaurds } from './guards/authGaurd';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { CartComponent } from './components/cart/cart.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },  // Default route
-  { path: 'home', component: HomeComponent },
   { path: 'login', component: LoginComponent, canActivate: [AuthGaurds] },
   { path: 'product-description', component: ProductdescriptionComponent },
   { path: 'contact', component: ContactComponentComponent },
   { path: 'cart', component: CartComponent },
   { path: 'favorites', component: FavoritesComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule) },
 ];
 
 @NgModule({

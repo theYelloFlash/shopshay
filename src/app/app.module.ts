@@ -4,20 +4,10 @@ import { MatIconModule } from '@angular/material/icon'; // Import MatIconModule
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './components/home/home.component';
-import { FlashsalesComponent } from './components/flashsales/flashsales.component';
-import { HeadingComponentComponent } from './components/heading-component/heading-component.component';
 import { TimerComponent } from './components/timer/timer.component';
 import { CardComponent } from './components/card/card.component';
-import { BestsellingproductsComponent } from './components/bestsellingproducts/bestsellingproducts.component';
-import { BrowsCategoriesComponent } from './components/brows-categories/brows-categories.component';
-import { ExploreProductsComponent } from './components/explore-products/explore-products.component';
-import { NewArrivalComponent } from './components/new-arrival/new-arrival.component';
-import { ExtraServicesComponent } from './components/brows-categories/extra-services/extra-services.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SignUpComponent } from './components/sign-up-component/sign-up-component.component';
 import { LoginComponent } from './components/login/login.component';
@@ -38,24 +28,14 @@ import { CartComponent } from './components/cart/cart.component';
 import { FavoritesComponent } from './components/favorites/favorites.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './components/about/about.component';
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent,
-    FlashsalesComponent,
-    HeadingComponentComponent,
-    TimerComponent,
-    CardComponent,
-    BestsellingproductsComponent,
-    BrowsCategoriesComponent,
-    ExploreProductsComponent,
-    NewArrivalComponent,
-    ExtraServicesComponent,
-    TimerComponent,
     FooterComponent,
     SignUpComponent,
     LoginComponent,
@@ -70,13 +50,12 @@ import { AboutComponent } from './about/about.component';
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    MatSidenavModule,
-    MatListModule,
     MatToolbarModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    SharedModule,
     ReactiveFormsModule,
     HttpClientModule,
     ToastrModule.forRoot(),

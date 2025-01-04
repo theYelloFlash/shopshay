@@ -2,9 +2,9 @@ import { animate, sequence, style, transition, trigger } from '@angular/animatio
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrl: './about.component.scss',
   animations: [
     trigger('fadeInSequence', [
       transition(':enter', [
@@ -19,5 +19,6 @@ import { Component } from '@angular/core';
     ]),
   ],
 })
-export class HomeComponent {
+export class AboutComponent {
+
 }

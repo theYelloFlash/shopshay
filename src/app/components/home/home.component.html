@@ -2,7 +2,7 @@
     <div class="container">
         <mat-sidenav-container class="sidenav-container" [hasBackdrop]="false">
             <!-- Side navigation -->
-            <mat-sidenav #sidenav mode="side" opened class="mt-4 d-none d-lg-block">
+            <mat-sidenav [@fadeInSequence] #sidenav mode="side" opened class="mt-4 d-none d-lg-block">
                 <mat-nav-list class="item-list">
                     <p class="p-0 py-2"><i class="me-2 fa-solid fa-venus"></i>Women's
                         Fashion</p>
@@ -20,9 +20,8 @@
                         Beauty</p>
                 </mat-nav-list>
             </mat-sidenav>
-
             <!-- Main content -->
-            <div class="main-content pt-3">
+            <div class="main-content pt-3" [@fadeInSequence]>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
